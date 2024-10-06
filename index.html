@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="suryaai logo .png" alt="Logo" class="logo">
+                <h1 class="website-name">Surya AI</h1>
+            </div>
+            <div class="navbar-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#demo">Demo</a>
+                <a href="#faqs">FAQs</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h2>Welcome to Surya AI</h2>
+            <p>Your smart solution for optimizing solar energy efficiency with AI-driven technology. Let’s transform how we power the future together.</p>
+            <div class="btn-container">
+                <a href="#demo" class="home-btn get-started-btn">Get Started</a>
+                <a href="#about" class="home-btn learn-more-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Sliding Section -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <img src="slide01.jpg" alt="Slide 1">
+            <div class="content">
+                <h2>Heading 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slide03.webp" alt="Slide 2">
+            <div class="content">
+                <h2>Heading 2</h2>
+                <p>Quisque sit amet est et sapien ullamcorper pharetra.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="slide02.jpeg" alt="Slide 3">
+            <div class="content">
+                <h2>Heading 3</h2>
+                <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="ground-truth-vs-surya-ai" class="gt-vs-ai-section">
+        <div class="container text-center">
+            <h2 class="section-title">Ground Truth vs Surya AI Model</h2>
+            <p class="section-description">Discover the difference between the actual ground truth data and the predictive capabilities of our Surya AI model. By comparing real-time data with AI predictions, we ensure precision and accuracy in every solar solution we provide.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center">
+                    <div class="image-container">
+                        <img src="ground_truth.webp" alt="Ground Truth" class="img-fluid rounded-circle hover-effect">
+                        <h4 class="image-title">Ground Truth</h4>
+                        <p class="image-description">Real-world data collected from the solar panels, providing precise, measurable results.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="image-container">
+                        <img src="suryai_model.jpg" alt="Surya AI Model" class="img-fluid rounded-circle hover-effect">
+                        <h4 class="image-title">Surya AI Model</h4>
+                        <p class="image-description">AI-driven predictions based on machine learning algorithms, optimized for efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="our-team">Our Team</button>
+                <button class="tab-btn" data-tab="what-is-surya-ai">What is Surya AI</button>
+                <button class="tab-btn" data-tab="our-vision">Our Vision</button>
+            </div>
+
+            <div class="tab-content active" id="our-team">
+                <h3 class="text-center">Meet Our Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="mem01.jpg" alt="Abhishek Ranjan" class="team-img">
+                        <h4>Abhishek Ranjan</h4>
+                        <p>Lead Developer & AI Specialist</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="mem02.jpg" alt="Aranyo Ray" class="team-img">
+                        <h4>Aranyo Ray</h4>
+                        <p>Machine Learning Expert</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="member3.jpg" alt="Vaibhav Ray" class="team-img">
+                        <h4>Vaibhav Ray</h4>
+                        <p>Data Researcher</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="member4.jpg" alt="Unknown" class="team-img">
+                        <h4>Unknown</h4>
+                        <p>Data Analyst</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="what-is-surya-ai">
+                <h3 class="text-center">What is Surya AI?</h3>
+                <p class="text-justify">Surya AI is an innovative platform that utilizes cutting-edge artificial intelligence technology to revolutionize how solar energy is harnessed, managed, and optimized. Through intelligent algorithms, Surya AI monitors various parameters to predict energy generation, manage power distribution, and reduce inefficiencies in solar energy systems, ensuring the highest possible output. 
+                <br><br> It integrates seamlessly with existing solar panels and energy storage systems to provide real-time data analysis and automation features. This not only increases efficiency but also prolongs the life of the systems. 
+                <br><br> Surya AI's predictive algorithms account for weather patterns, seasonal changes, and system health to offer a smart energy management solution tailored to individual needs. Whether for residential use or large-scale solar farms, Surya AI provides unparalleled insights into energy production and consumption, making it a valuable tool for anyone invested in solar energy. 
+                <br><br> With our advanced monitoring and optimization tools, Surya AI brings solar energy closer to perfection, helping reduce costs while contributing to a greener planet.</p>
+            </div>
+
+            <div class="tab-content" id="our-vision">
+                <h3 class="text-center">Our Vision</h3>
+                <p class="text-justify">At Surya AI, our vision is to harness the boundless potential of solar energy using advanced artificial intelligence and machine learning technologies to revolutionize the global energy landscape. We aim to create a future where clean, renewable energy is accessible, affordable, and maximized to its full potential for every individual and organization, no matter their scale.
+                <br><br> Our mission is to empower societies with the tools to generate, manage, and utilize solar energy in a way that not only benefits the user but also helps in reducing carbon emissions and mitigating climate change. By merging AI technology with solar energy, we strive to create solutions that adapt to changing environmental conditions, ensuring energy efficiency and sustainability.
+                <br><br> We envision a world where every solar panel communicates, learns, and optimizes energy usage in real-time, fostering a smarter and more resilient energy system. Through innovation, collaboration, and a steadfast commitment to excellence, Surya AI is dedicated to making a significant impact on how energy is produced and consumed, paving the way for a sustainable tomorrow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    
+        <section id="demo" class="demo-section">
+            <div class="container">
+                <h2 class="text-center">Get Your Solar Recommendations</h2>
+                <p class="text-center mb-4">Fill in your details below to get the best solar roof recommendations based on your location and roof type.</p>
+        
+                <div class="form-wrapper">
+                    <form>
+                        <div class="form-group">
+                            <label for="location">Your Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter your location">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="roofType">Select Roof Type</label>
+                            <select class="form-control" id="roofType">
+                                <option>Flat Roof</option>
+                                <option>Sloped Roof</option>
+                                <option>Metal Roof</option>
+                                <option>Tile Roof</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="roofSize">Approximate Roof Size (in square meters)</label>
+                            <input type="number" class="form-control" id="roofSize" placeholder="Enter your roof size">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="shade">Shade Status</label>
+                            <select class="form-control" id="shade">
+                                <option>No, not shaded</option>
+                                <option>Yes, partially shaded</option>
+                                <option>Yes, fully shaded</option>
+                            </select>
+                        </div>
+        
+                        <button type="submit" class="btn btn-primary btn-block" id="getRecommendation">Get Solar Recommendation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="instant-help" class="instant-help-section">
+            <div class="container text-center">
+                <h2 class="section-title">Instant Help with Our Telegram Bot</h2>
+                <p class="section-description">Get instant assistance with our advanced Telegram bot. It can help you with various features, including solar recommendations, project details, and live support.</p>
+        
+                <div class="bot-feature">
+                    <div class="bot-logo-container">
+                        <img src="bot logo.png" alt="Telegram Bot Logo" class="bot-logo">
+                    </div>
+                    <div class="bot-info">
+                        <h3>Surya AI Telegram Bot</h3>
+                        <p>Our Telegram bot can provide instant solutions to your queries ...</p>
+                        <a href="https://t.me/AvitaAibot" target="_blank" class="btn btn-primary">Start Chat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- FAQ Section -->
+    <section id="faqs" class="faqs-section">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-container">
+    
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>1. What is Surya AI?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Surya AI is an advanced artificial intelligence system that uses machine learning algorithms to provide solar energy solutions based on your specific location, roof type, and energy needs.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>2. How does Surya AI calculate solar energy efficiency?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Surya AI calculates solar energy efficiency by analyzing factors like your geographical location, roof size, shading, and other environmental conditions using real-world and predicted data.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>3. What is the Ground Truth data?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ground Truth refers to the real-world data collected from solar panels or sensors, which serves as the basis for comparing the AI model's predictions to actual performance.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>4. Can I use Surya AI for any roof type?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Surya AI supports various roof types such as flat roofs, sloped roofs, metal roofs, and tile roofs. Simply select your roof type during the setup process.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>5. How accurate is Surya AI?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Surya AI has high accuracy, but the results may vary slightly due to unpredictable weather conditions or other unforeseen factors. However, we continuously improve the model for better results.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>6. How can I get a solar recommendation?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply enter your location, roof size, and type, and select if your roof is shaded or not. Surya AI will generate personalized solar recommendations for you.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>7. Is Surya AI available worldwide?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, Surya AI focuses on regions with significant solar energy potential. However, we are expanding our services globally in the near future.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>8. How do I know if my roof is suitable for solar panels?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Surya AI will analyze your roof’s size, type, and shading conditions to determine whether it’s suitable for solar panels. You can also consult a solar expert for further insights.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 9 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>9. What kind of data is used in the Surya AI model?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Surya AI uses real-world solar panel data, weather data, satellite imagery, and various environmental factors to generate accurate predictions and recommendations.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 10 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>10. How can I contact support for Surya AI?</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can contact our support team via the Telegram bot integrated on our website, or send an email to support@suryaai.com for assistance.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+          <div class="row">
+            <!-- Contact Us Form -->
+            <div class="col-md-6">
+              <h4 class="footer-heading text-center">Contact Us</h4>
+              <form class="contact-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Send Message</button>
+              </form>
+            </div>
+      
+            <!-- Get in Touch Section -->
+            <div class="col-md-6 text-center">
+              <h4 class="footer-heading">Get in Touch</h4>
+              <ul class="contact-info">
+                <li><i class="fas fa-envelope"></i> Email: support@suryaai.com</li>
+                <li><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</li>
+                <li><i class="fas fa-map-marker-alt"></i> Address: 123 Solar Street, Sun City, Solarland</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <p>&copy; 2024 Surya AI. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
+
+    
+</body>
+</html>
