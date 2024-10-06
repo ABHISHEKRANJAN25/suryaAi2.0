@@ -1,0 +1,677 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar Section */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #111;
+    z-index: 999;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.website-name {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px #ff6a00;
+}
+
+.navbar-links a {
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+/* Home Section */
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #524343;
+    padding-top: 100px;
+}
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ff6a00;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+/* Hero Sliding Section */
+.hero-slider {
+    position: relative;
+    max-width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflowing slides */
+}
+
+.slide {
+    display: none; /* Hide all slides initially */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire slide */
+}
+
+.slide.active {
+    display: block; /* Show only the active slide */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #e64a19; /* Button hover color */
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff6a00;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin: 0 10px;
+}
+
+.home-btn:hover {
+    background-color: #ff4500;
+    box-shadow: 0px 5px 15px rgba(255, 106, 0, 0.6);
+}
+
+
+
+
+
+/* Placeholder for Other Sections */
+/* About Section */
+.about-section {
+    padding: 80px 15px;
+    background-color: #111;
+    color: #ddd;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 30px 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Team Section */
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Demo Section */
+.demo-section {
+    padding: 80px 15px;
+    background-color: #997676;
+    color: #ddd;
+}
+
+.demo-section h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.demo-section p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff6a00;
+    box-shadow: 0px 0px 8px rgba(255, 106, 0, 0.7);
+}
+
+label {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6a00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-block:hover {
+    background-color: #ff8b26;
+    box-shadow: 0px 5px 15px rgba(255, 106, 0, 0.7);
+}
+/* Instant Help Section */
+.instant-help-section {
+    background-color: #222;
+    color: #ddd;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+/* Bot Feature - Layout */
+.bot-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Bot Logo - 3D Hover Effect */
+.bot-logo-container {
+    perspective: 1000px;
+}
+
+.bot-logo {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bot-logo:hover {
+    transform: rotateY(360deg);
+    box-shadow: 0px 8px 25px rgba(255, 106, 0, 0.7);
+}
+
+/* Bot Info */
+.bot-info h3 {
+    font-size: 28px;
+    color: #ff6a00;
+}
+
+.bot-info p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.bot-info .btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ff6a00;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bot-info .btn:hover {
+    background-color: #ff8b26;
+    box-shadow: 0px 5px 15px rgba(255, 106, 0, 0.7);
+}
+/* Ground Truth vs Surya AI Section */
+.gt-vs-ai-section {
+    background-color: #1a1a1a;
+    color: #ddd;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+/* Image Container - Round Images with Hover Effect */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hover-effect:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0px 8px 25px rgba(255, 106, 0, 0.7);
+}
+
+/* Image Title and Description */
+.image-title {
+    font-size: 24px;
+    color: #ff6a00;
+    margin-top: 15px;
+}
+
+.image-description {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-container img {
+        width: 150px;
+        height: 150px;
+    }
+}
+/* FAQs Section */
+.faqs-section {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 70px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff6a00;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* FAQ Item */
+.faq-item {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    background-color: #333333;
+}
+
+/* FAQ Question */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+.faq-question h4 {
+    margin: 0;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ccc;
+    transition: max-height 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+/* Responsive FAQ Section */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+/* Footer Section */
+.footer-section {
+    background-color: #111;
+    color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .footer-heading {
+    font-size: 24px;
+    color: #ff6a00;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-control {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #888;
+  }
+  
+  .contact-form .btn-submit {
+    background-color: #ff6a00;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+  }
+  
+  .contact-form .btn-submit:hover {
+    background-color: #ff8c32;
+    transform: scale(1.05); /* Slight grow effect on hover */
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contact-info li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; /* Align content to center */
+    align-items: center;
+  }
+  
+  .contact-info li i {
+    color: #ff6a00;
+    margin-right: 15px;
+  }
+  
+  .contact-info li:hover i {
+    color: #ff8c32;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-section {
+      text-align: center;
+    }
+  
+    .contact-info li {
+      justify-content: center;
+    }
+  
+    .col-md-6 {
+      margin-bottom: 30px;
+    }
+  
+    .contact-form .btn-submit {
+      width: 100%; /* Full-width button on smaller screens */
+    }
+  }
+  
